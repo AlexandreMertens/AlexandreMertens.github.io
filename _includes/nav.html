@@ -1,0 +1,78 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">Accueil</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              {% if page.url == '/wingtsun.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/wingtsun.html">Wing Tsun</a>
+                </li>
+              {% if page.url == '/escrima.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/escrima.html">Escrima</a>
+                </li>
+              {% if page.url == '/enfants.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/enfants.html">Enfants</a>
+                </li>
+              {% if page.url == '/ecoles.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/ecoles.html">Écoles</a>
+                </li>
+              {% if page.url == '/calendar.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/calendar.html">Calendrier</a>
+                </li>
+              {% if page.url == '/evenements.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/evenements.html">Évènements passés</a>
+                </li>
+              {% if page.url == '/contact.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/contact.html">Contact</a>
+                </li>
+              {% if page.url == '/links.html' %}
+                <li class="active">
+              {% else %}
+                <li>
+              {% endif %}
+                    <a href="{{ site.baseurl }}/links.html">Liens</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,4 @@
+baseurl: /website
+
+markdown: kramdown
+future: true
